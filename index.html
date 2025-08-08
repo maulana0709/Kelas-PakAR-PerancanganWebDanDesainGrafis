@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segar Fresh - Toko Mocktail Premium</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #5E35B1;
+            --secondary: #3949AB;
+            --accent: #7C4DFF;
+            --light: #E8EAF6;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        .menu-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .menu-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .mocktail-img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        
+        .order-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .order-btn:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="mr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                        </svg>
+                    </div>
+                    <span class="font-semibold text-xl tracking-tight">Segar Fresh</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-white hover:text-gray-200">Beranda</a>
+                    <a href="#menu" class="text-white hover:text-gray-200">Menu</a>
+                    <a href="#about" class="text-white hover:text-gray-200">Tentang</a>
+                    <a href="#contact" class="text-white hover:text-gray-200">Kontak</a>
+                </div>
+                <button class="md:hidden text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative gradient-bg text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Mocktail Premium Diracik dengan Sepenuh Hati</h1>
+                    <p class="text-xl mb-8">Minuman non-alkohol yang diracik ahli untuk setiap momen</p>
+                    <button class="bg-white text-purple-800 font-bold py-3 px-8 rounded-full order-btn">
+                        Pesan Sekarang
+                    </button>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3a0b2dae-9091-480b-9b15-14f3daf3f363.png" alt="Three artistic mocktail glasses on marble counter with garnishes and mint leaves" class="rounded-lg shadow-xl border-4 border-white">
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f9f9f9" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,266.7C384,256,480,224,576,218.7C672,213,768,235,864,245.3C960,256,1056,256,1152,229.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Mocktail Andalan Kami</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Mocktail 1 -->
+                <div class="menu-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/236538cd-104b-470b-a621-547d8791d6c2.png" alt="Tropical Sunset mocktail with orange, pineapple, and cherry garnishes in tall glass" class="mocktail-img w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Tropical Sunset</h3>
+                        <p class="text-gray-600 mt-2">Campuran segar nanas, jeruk, grenadine, dan sedikit perasan jeruk nipis</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-lg font-bold text-purple-600">Rp 35.000</span>
+                            <button class="bg-purple-600 text-white py-2 px-4 rounded-full order-btn">
+                                Tambahkan ke Pesanan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mocktail 2 -->
+                <div class="menu-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/75b44f61-0b44-4910-b1b2-72ce143e316f.png" alt="Berry Mojito mocktail with mixed berries, mint leaves and lime in copper mug" class="mocktail-img w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Berry Mojito</h3>
+                        <p class="text-gray-600 mt-2">Campuran buah beri segar dengan daun mint, jeruk nipis, dan soda</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-lg font-bold text-purple-600">Rp 40.000</span>
+                            <button class="bg-purple-600 text-white py-2 px-4 rounded-full order-btn">
+                                Tambahkan ke Pesanan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mocktail 3 -->
+                <div class="menu-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ca846a96-f031-4b7f-8b89-b7474512f68b.png" alt="Cucumber Cooler mocktail with cucumber slices, mint and lime in tall glass" class="mocktail-img w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Cucumber Cooler</h3>
+                        <p class="text-gray-600 mt-2">Timun segar, mint, jeruk nipis, dan tonik elderflower untuk kesegaran maksimal</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-lg font-bold text-purple-600">Rp 32.000</span>
+                            <button class="bg-purple-600 text-white py-2 px-4 rounded-full order-btn">
+                                Tambahkan ke Pesanan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mocktail 4 -->
+                <div class="menu-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/628756a3-37ac-4b95-a3f1-449cfb2845de.png" alt="Spiced Apple Fizz mocktail with cinnamon stick and apple slices in coupe glass" class="mocktail-img w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Spiced Apple Fizz</h3>
+                        <p class="text-gray-600 mt-2">Jus apel dengan sirup kayu manis, lemon, dan ginger beer di atasnya</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-lg font-bold text-purple-600">Rp 38.000</span>
+                            <button class="bg-purple-600 text-white py-2 px-4 rounded-full order-btn">
+                                Tambahkan ke Pesanan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mocktail 5 -->
+                <div class="menu-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2df98353-5e6a-45bf-bf3b-250184b694e5.png" alt="Passionfruit Paradise mocktail with passionfruit pulp and edible flowers in martini glass" class="mocktail-img w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Passionfruit Paradise</h3>
+                        <p class="text-gray-600 mt-2">Markisa tropis dipadukan dengan jus nanas dan air kelapa</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-lg font-bold text-purple-600">Rp 45.000</span>
+                            <button class="bg-purple-600 text-white py-2 px-4 rounded-full order-btn">
+                                Tambahkan ke Pesanan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mocktail 6 -->
+                <div class="menu-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/879925c6-e8ef-404f-83f9-a91dea061f1e.png" alt="Smoky Rosemary Collins mocktail with rosemary sprig and citrus peel in rocks glass" class="mocktail-img w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Smoky Rosemary Collins</h3>
+                        <p class="text-gray-600 mt-2">Lemon, sirup rosemary, pinggiran garam asap, dan air tonik</p>
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-lg font-bold text-purple-600">Rp 42.000</span>
+                            <button class="bg-purple-600 text-white py-2 px-4 rounded-full order-btn">
+                                Tambahkan ke Pesanan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section -->
+    <section class="py-20 gradient-bg text-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Apa Kata Pelanggan Kami</h2>
+                <div class="w-20 h-1 bg-white mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-lg text-center">
+                  <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/75b44f61-0b44-4910-b1b2-72ce143e316f.png" alt="Berry Mojito mocktail with mixed berries, mint leaves and lime in copper mug"
+                  <p class="text-lg italic">"Mocktail di Segar Fresh benar-benar luar biasa. Rasanya segar dan unik. Favoritku Berry Mojito!"</p>
+                    <h4 class="mt-4 font-semibold">Sarah, Jakarta</h4>
+                </div>
+
+                <!-- Testimoni 2 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-lg text-center">
+                  <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/879925c6-e8ef-404f-83f9-a91dea061f1e.png" alt="Smoky Rosemary Collins mocktail with rosemary sprig and citrus peel in rocks glass"
+                    <p class="text-lg italic">"Presentasi mocktailnya sangat elegan. Cocok untuk acara spesial. Sangat recommended!"</p>
+                    <h4 class="mt-4 font-semibold">Dewi, Bandung</h4>
+                </div>
+
+                <!-- Testimoni 3 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-lg text-center">
+                  <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ca846a96-f031-4b7f-8b89-b7474512f68b.png" alt="Cucumber Cooler mocktail with cucumber slices, mint and lime in tall glass"
+                    <p class="text-lg italic">"Segar Fresh membawa pengalaman baru dalam menikmati minuman non-alkohol. Rasa premium!"</p>
+                    <h4 class="mt-4 font-semibold">Andi, Surabaya</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Segar Fresh</h2>
+                    <p class="text-gray-600 mb-4">
+                        Kami adalah ahli dalam meracik mocktail premium dengan bahan berkualitas terbaik. Setiap racikan kami dibuat dengan penuh seni dan rasa untuk menciptakan pengalaman minum yang luar biasa — tanpa alkohol. Baik untuk pesta, acara formal, atau hanya ingin memanjakan diri di rumah, Segar Fresh selalu siap menyajikan yang terbaik.
+                    </p>
+                    <p class="text-gray-600">
+                        Temukan rasa baru yang memanjakan lidah dan biarkan kami membawa pengalaman mixology ke level berikutnya!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Pesan Mocktail Anda Sekarang</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+
+            <form class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="name">Nama</label>
+                    <input class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-600" type="text" id="name" name="name" placeholder="Nama Anda">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
+                    <input class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-600" type="email" id="email" name="email" placeholder="Alamat Email">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-bold mb-2" for="menu">Pilih Menu</label>
+                    <select class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-600" id="menu" name="menu">
+                        <option>Tropical Sunset</option>
+                        <option>Berry Mojito</option>
+                        <option>Cucumber Cooler</option>
+                        <option>Spiced Apple Fizz</option>
+                        <option>Passionfruit Paradise</option>
+                        <option>Smoky Rosemary Collins</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-bold mb-2" for="message">Pesan Tambahan</label>
+                    <textarea class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-600" id="message" name="message" rows="4" placeholder="Pesan atau permintaan khusus"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-purple-600 text-white font-bold py-3 px-6 rounded-full order-btn">
+                        Kirim Pesanan
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">&copy; 2025 Segar Fresh. Seluruh hak cipta dilindungi.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="hover:text-gray-300">Facebook</a>
+                <a href="#" class="hover:text-gray-300">Instagram</a>
+                <a href="#" class="hover:text-gray-300">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script toggle navbar mobile
+        document.querySelector("nav button").addEventListener("click", function() {
+            const nav = document.querySelector("nav .md\\:flex");
+            nav.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
